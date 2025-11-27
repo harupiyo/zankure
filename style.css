@@ -515,3 +515,90 @@ footer {
     padding: 0 5px;
 }
 
+
+/* Magazine Style Enhancements for Black Bible */
+
+.bible-content {
+    max-width: 900px; /* Slightly wider for magazine feel */
+}
+
+.bible-chapter {
+    background: #111;
+    padding: 60px; /* More breathing room */
+    margin-bottom: 100px;
+    border: none; /* Remove simple border */
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    position: relative;
+}
+
+/* Drop Cap for the first letter of the first paragraph */
+.bible-chapter > p:first-of-type::first-letter {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 5rem;
+    float: left;
+    line-height: 0.8;
+    padding-right: 15px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.bible-chapter h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 3rem;
+    letter-spacing: 0.05em;
+}
+
+.bible-chapter h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    margin: 20px auto 0;
+}
+
+.bible-chapter p {
+    font-size: 1.15rem;
+    line-height: 2.4; /* More readable line height */
+    margin-bottom: 2.5rem;
+    text-align: justify;
+    font-family: 'Noto Sans JP', sans-serif; /* Clean sans-serif for body */
+    font-weight: 300;
+}
+
+/* Image Styling */
+.bible-image {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 4rem;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    filter: grayscale(20%) contrast(110%); /* Gritty look */
+}
+
+.bible-image-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+
+/* Pull Quote */
+.pull-quote {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.8rem;
+    color: var(--white);
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding: 30px;
+    margin: 40px -20px;
+    text-align: center;
+    background: #0a0a0a;
+    line-height: 1.6;
+}
+
