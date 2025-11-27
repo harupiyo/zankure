@@ -240,50 +240,37 @@
                         <p>金利3.9%の場合、300万円に対する年間利息は「11万7千円」です。5年間で「58万5千円」。</p>
                         <p>いいですか？
                             あなたが月々の支払いを頑張っている間も、この「58万5千円」という利息は、ただ車を維持しているだけで発生し続けているのです。これは、通常のローンでは払わなくて済んだはずのお金です。
-                        </p>
-                        <p>さらに恐ろしいのは、もし5年後に「やっぱりこの車が気に入ったから買い取りたい」と思った場合です。</p>
-                        <p>300万円を一括で払えればまだマシです。しかし、多くの人はそんな大金を用意していません。どうするか？ 「再ローン」を組むのです。</p>
-                        <p>ここで地獄の蓋が開きます。再ローンの金利は、新車時の金利（3.9%など）よりも高く設定されるのが一般的です（5%〜7%など）。</p>
-                        <p>つまり、あなたは最初の5年間で高い金利を払い、次の数年間でさらに高い金利を払うことになります。「金利の二重払い」。これが残クレの数学的正体です。</p>
-                        <p>総支払額を計算すると、現金一括購入に比べて100万円以上高くなることもザラにあります。100万円あれば何ができますか？
-                            家族でハワイに行けます。子供の学費になります。それを、あなたはドブに捨てているのと同じなのです。</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+                        <div class="container">
+                            <h3 class="section-title">搾取のシミュレーション</h3>
+                            <p>どれだけ損をするか、自分の目で確認してください。</p>
 
-        <section id="simulation" class="section-simulation">
-            <div class="container">
-                <h3 class="section-title">搾取のシミュレーション</h3>
-                <p>どれだけ損をするか、自分の目で確認してください。</p>
-
-                <div class="sim-container">
-                    <div class="sim-inputs">
-                        <label>車両価格 (万円): <input type="number" id="price" value="600"></label>
-                        <label>残価設定 (万円): <input type="number" id="residual" value="300"></label>
-                        <label>金利 (%): <input type="number" id="rate" value="3.9" step="0.1"></label>
-                        <label>期間 (年): <select id="years">
-                                <option value="3">3年</option>
-                                <option value="5" selected>5年</option>
-                            </select></label>
-                        <button id="calc-btn">無駄金を計算する</button>
-                    </div>
-                    <div class="sim-results" id="results">
-                        <div class="result-item">
-                            <span>月々の支払い</span>
-                            <strong id="monthly-payment">-- 円</strong>
+                            <div class="sim-container">
+                                <div class="sim-inputs">
+                                    <label>車両価格 (万円): <input type="number" id="price" value="600"></label>
+                                    <label>残価設定 (万円): <input type="number" id="residual" value="300"></label>
+                                    <label>金利 (%): <input type="number" id="rate" value="3.9" step="0.1"></label>
+                                    <label>期間 (年): <select id="years">
+                                            <option value="3">3年</option>
+                                            <option value="5" selected>5年</option>
+                                        </select></label>
+                                    <button id="calc-btn">無駄金を計算する</button>
+                                </div>
+                                <div class="sim-results" id="results">
+                                    <div class="result-item">
+                                        <span>月々の支払い</span>
+                                        <strong id="monthly-payment">-- 円</strong>
+                                    </div>
+                                    <div class="result-item highlight-loss">
+                                        <span>支払総額</span>
+                                        <strong id="total-payment">-- 円</strong>
+                                    </div>
+                                    <div class="result-item loss-display">
+                                        <span>金利手数料（無駄金）</span>
+                                        <strong id="interest-payment">-- 円</strong>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="result-item highlight-loss">
-                            <span>支払総額</span>
-                            <strong id="total-payment">-- 円</strong>
-                        </div>
-                        <div class="result-item loss-display">
-                            <span>金利手数料（無駄金）</span>
-                            <strong id="interest-payment">-- 円</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section class="conclusion">
